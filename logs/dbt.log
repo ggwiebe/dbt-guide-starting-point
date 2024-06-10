@@ -541,3 +541,16 @@ select * from qryFinal
 [0m17:48:48.102841 [debug] [MainThread]: Command `dbt run` succeeded at 17:48:48.102794 after 12.51 seconds
 [0m17:48:48.103041 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10682d760>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106755e80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106de8bf0>]}
 [0m17:48:48.103212 [debug] [MainThread]: Flushing usage events
+[0m17:52:19.338299 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1065cbe00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1068dccb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1068dc980>]}
+
+
+============================== 17:52:19.340641 | 56b0d5f7-d96a-4d0b-9ab9-d8b918749f41 ==============================
+[0m17:52:19.340641 [info ] [MainThread]: Running with dbt=1.8.2
+[0m17:52:19.340927 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/glenn.wiebe/code/dbt-guide-starting-point', 'version_check': 'True', 'debug': 'False', 'log_path': '/Users/glenn.wiebe/code/dbt-guide-starting-point/logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt run --profile quickstart_oauth', 'send_anonymous_usage_stats': 'True'}
+[0m17:52:19.343403 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Env var required but not provided: 'databricks_host'
+[0m17:52:19.344743 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 0.044421833, "process_user_time": 0.430846, "process_kernel_time": 0.107354, "process_mem_max_rss": "95027200", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m17:52:19.345034 [debug] [MainThread]: Command `dbt run` failed at 17:52:19.344990 after 0.04 seconds
+[0m17:52:19.345183 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105a40500>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1065cbe60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1065fa690>]}
+[0m17:52:19.345328 [debug] [MainThread]: Flushing usage events
