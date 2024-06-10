@@ -3,7 +3,37 @@ football_538:
     outputs:
         dev:
           type: databricks
-          schema: dbt_jack_sparrow
+          schema: dbt
           host: "{{ env_var('databricks_host') }}"
-          http_path: /sql/your/http/path
+          http_path: /sql/1.0/warehouses/824f62d19acf3cb9
           token: "{{ env_var('databricks_token') }}"
+
+quickstart:
+  target: dev
+  outputs:
+    dev:
+      type: databricks
+      catalog: ggw #optional catalog name if you are using Unity Catalog]
+      schema: dbt # Required
+      # host: YOURORG.databrickshost.com # Required
+      # token: dapiXXXXXXXXXXXXXXXXXXXXXXX # Required Personal Access Token (PAT) if using token-based authentication
+      host: "{{ env_var('DATABRICKS_HOST') }}"
+      http_path: /sql/1.0/warehouses/824f62d19acf3cb9 # Required
+      token: "{{ env_var('DATABRICKS_TOKEN') }}"
+      threads: 1  # Optional, default 1
+
+quickstart_oauth:
+  target: dev
+  outputs:
+    dev:
+      type: databricks
+      catalog: ggw #optional catalog name if you are using Unity Catalog]
+      schema: dbt # Required
+      # host: YOURORG.databrickshost.com # Required
+      # token: dapiXXXXXXXXXXXXXXXXXXXXXXX # Required Personal Access Token (PAT) if using token-based authentication
+      host: "{{ env_var('databricks_host') }}"
+      http_path: /sql/1.0/warehouses/824f62d19acf3cb9 # Required
+      auth_type: oauth # Required if using OAuth-based authentication
+      client_id: 53864423-4624-44b8-8bf7-36923eb6f698 # The ID of your OAuth application. Required if using OAuth-based authentication
+      client_secret: "{{ env_var('DATABRICKS_OAUTH_SECRET') }}" # OAuth client secret. # Required if using OAuth-based authentication
+      threads: 1  # Optional, default 1

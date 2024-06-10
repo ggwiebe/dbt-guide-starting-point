@@ -1,0 +1,543 @@
+[0m17:42:01.788133 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108c878f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108ef0ad0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108ef0770>]}
+
+
+============================== 17:42:01.790452 | a3c2a0a3-9a61-452d-9117-da060559a156 ==============================
+[0m17:42:01.790452 [info ] [MainThread]: Running with dbt=1.8.2
+[0m17:42:01.790739 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/glenn.wiebe/code/dbt-guide-starting-point', 'fail_fast': 'False', 'version_check': 'True', 'log_path': '/Users/glenn.wiebe/code/dbt-guide-starting-point/logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt run', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m17:42:01.793496 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Env var required but not provided: 'databricks_host'
+[0m17:42:01.883743 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 0.13042234, "process_user_time": 0.513741, "process_kernel_time": 0.137611, "process_mem_max_rss": "94404608", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m17:42:01.884333 [debug] [MainThread]: Command `dbt run` failed at 17:42:01.884242 after 0.13 seconds
+[0m17:42:01.884624 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108e73e60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107a01550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108d15370>]}
+[0m17:42:01.884907 [debug] [MainThread]: Flushing usage events
+[0m17:43:49.367385 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1242a78f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12452ca10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12452c6b0>]}
+
+
+============================== 17:43:49.369526 | 5ea880ad-77ff-46d6-86cb-bc7e136bf8a0 ==============================
+[0m17:43:49.369526 [info ] [MainThread]: Running with dbt=1.8.2
+[0m17:43:49.369792 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/Users/glenn.wiebe/code/dbt-guide-starting-point/logs', 'profiles_dir': '/Users/glenn.wiebe/code/dbt-guide-starting-point', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run --profile quickstart', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m17:43:49.465757 [debug] [MainThread]: Spark adapter: Setting pyhive.hive logging to ERROR
+[0m17:43:49.466023 [debug] [MainThread]: Spark adapter: Setting thrift.transport logging to ERROR
+[0m17:43:49.466166 [debug] [MainThread]: Spark adapter: Setting thrift.protocol logging to ERROR
+[0m17:43:56.997548 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '5ea880ad-77ff-46d6-86cb-bc7e136bf8a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x157af3560>]}
+[0m17:43:57.017570 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '5ea880ad-77ff-46d6-86cb-bc7e136bf8a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x120c1a510>]}
+[0m17:43:57.017924 [info ] [MainThread]: Registered adapter: databricks=1.8.1
+[0m17:43:57.063371 [debug] [MainThread]: checksum: 10057920b74e669a4d2b43817371676f9c89d295e0b303fac7d0dd0b717c7c7d, vars: {}, profile: quickstart, target: , version: 1.8.2
+[0m17:43:57.063989 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m17:43:57.064187 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '5ea880ad-77ff-46d6-86cb-bc7e136bf8a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x15789d640>]}
+[0m17:43:57.618361 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.football_538.marts
+- models.football_538.staging
+[0m17:43:57.620410 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '5ea880ad-77ff-46d6-86cb-bc7e136bf8a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x168507a70>]}
+[0m17:43:57.656387 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '5ea880ad-77ff-46d6-86cb-bc7e136bf8a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x157feb9e0>]}
+[0m17:43:57.656636 [info ] [MainThread]: Found 3 models, 586 macros
+[0m17:43:57.656786 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '5ea880ad-77ff-46d6-86cb-bc7e136bf8a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x16859a150>]}
+[0m17:43:57.657487 [info ] [MainThread]: 
+[0m17:43:57.657771 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(id=5771264224, session-id=None, name=master, idle-time=0s, acquire-count=0, language=None, thread-identifier=(95914, 8441035456), compute-name=) - Creating connection
+[0m17:43:57.657911 [debug] [MainThread]: Acquiring new databricks connection 'master'
+[0m17:43:57.658038 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(id=5771264224, session-id=None, name=master, idle-time=1.9073486328125e-06s, acquire-count=1, language=None, thread-identifier=(95914, 8441035456), compute-name=) - Acquired connection on thread (95914, 8441035456), using default compute resource
+[0m17:43:57.660225 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(id=5771270368, session-id=None, name=list_ggw, idle-time=0s, acquire-count=0, language=None, thread-identifier=(95914, 13170143232), compute-name=) - Creating connection
+[0m17:43:57.660399 [debug] [ThreadPool]: Acquiring new databricks connection 'list_ggw'
+[0m17:43:57.660532 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(id=5771270368, session-id=None, name=list_ggw, idle-time=9.5367431640625e-07s, acquire-count=1, language=None, thread-identifier=(95914, 13170143232), compute-name=) - Acquired connection on thread (95914, 13170143232), using default compute resource
+[0m17:43:57.660670 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(id=5771270368, session-id=None, name=list_ggw, idle-time=0.00014281272888183594s, acquire-count=1, language=None, thread-identifier=(95914, 13170143232), compute-name=) - Checking idleness
+[0m17:43:57.660787 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(id=5771270368, session-id=None, name=list_ggw, idle-time=0.0002608299255371094s, acquire-count=1, language=None, thread-identifier=(95914, 13170143232), compute-name=) - Retrieving connection
+[0m17:43:57.660915 [debug] [ThreadPool]: Using databricks connection "list_ggw"
+[0m17:43:57.661044 [debug] [ThreadPool]: On list_ggw: GetSchemas(database=ggw, schema=None)
+[0m17:43:57.661157 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:43:58.380467 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(id=5771270368, session-id=01ef2772-8ae6-1dc6-b192-c2c48936b0a5, name=list_ggw, idle-time=6.198883056640625e-06s, acquire-count=1, language=None, thread-identifier=(95914, 13170143232), compute-name=) - Connection created
+[0m17:43:58.381441 [debug] [ThreadPool]: Databricks adapter: Cursor(session-id=01ef2772-8ae6-1dc6-b192-c2c48936b0a5, command-id=Unknown) - Created cursor
+[0m17:44:11.023200 [debug] [ThreadPool]: SQL status: OK in 13.359999656677246 seconds
+[0m17:44:11.028842 [debug] [ThreadPool]: Databricks adapter: Cursor(session-id=01ef2772-8ae6-1dc6-b192-c2c48936b0a5, command-id=01ef2772-9138-195d-a3c2-7a63180c4b22) - Closing cursor
+[0m17:44:11.029450 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(id=5771270368, session-id=01ef2772-8ae6-1dc6-b192-c2c48936b0a5, name=list_ggw, idle-time=5.0067901611328125e-06s, acquire-count=0, language=None, thread-identifier=(95914, 13170143232), compute-name=) - Released connection
+[0m17:44:11.030965 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(id=5771270368, session-id=01ef2772-8ae6-1dc6-b192-c2c48936b0a5, name=list_ggw, idle-time=0.0015420913696289062s, acquire-count=0, language=None, thread-identifier=(95914, 13170143232), compute-name=) - Checking idleness
+[0m17:44:11.031331 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_ggw, now list_ggw_dbt)
+[0m17:44:11.031711 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(id=5771270368, session-id=01ef2772-8ae6-1dc6-b192-c2c48936b0a5, name=list_ggw_dbt, idle-time=0.0022819042205810547s, acquire-count=0, language=None, thread-identifier=(95914, 13170143232), compute-name=) - Reusing connection previously named list_ggw
+[0m17:44:11.032024 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(id=5771270368, session-id=01ef2772-8ae6-1dc6-b192-c2c48936b0a5, name=list_ggw_dbt, idle-time=0.002604961395263672s, acquire-count=1, language=None, thread-identifier=(95914, 13170143232), compute-name=) - Acquired connection on thread (95914, 13170143232), using default compute resource
+[0m17:44:11.039623 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(id=5771270368, session-id=01ef2772-8ae6-1dc6-b192-c2c48936b0a5, name=list_ggw_dbt, idle-time=0.010198831558227539s, acquire-count=1, language=None, thread-identifier=(95914, 13170143232), compute-name=) - Checking idleness
+[0m17:44:11.039908 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(id=5771270368, session-id=01ef2772-8ae6-1dc6-b192-c2c48936b0a5, name=list_ggw_dbt, idle-time=0.010502815246582031s, acquire-count=1, language=None, thread-identifier=(95914, 13170143232), compute-name=) - Retrieving connection
+[0m17:44:11.040133 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(id=5771270368, session-id=01ef2772-8ae6-1dc6-b192-c2c48936b0a5, name=list_ggw_dbt, idle-time=0.010738849639892578s, acquire-count=1, language=None, thread-identifier=(95914, 13170143232), compute-name=) - Checking idleness
+[0m17:44:11.040336 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(id=5771270368, session-id=01ef2772-8ae6-1dc6-b192-c2c48936b0a5, name=list_ggw_dbt, idle-time=0.010943889617919922s, acquire-count=1, language=None, thread-identifier=(95914, 13170143232), compute-name=) - Retrieving connection
+[0m17:44:11.040527 [debug] [ThreadPool]: Spark adapter: NotImplemented: add_begin_query
+[0m17:44:11.040707 [debug] [ThreadPool]: Using databricks connection "list_ggw_dbt"
+[0m17:44:11.040924 [debug] [ThreadPool]: On list_ggw_dbt: /* {"app": "dbt", "dbt_version": "1.8.2", "dbt_databricks_version": "1.8.1", "databricks_sql_connector_version": "3.1.2", "profile_name": "quickstart", "target_name": "dev", "connection_name": "list_ggw_dbt"} */
+select
+      table_name,
+      if(table_type in ('EXTERNAL', 'MANAGED', 'MANAGED_SHALLOW_CLONE'), 'table', lower(table_type)) as table_type,
+      lower(data_source_format) as file_format,
+      table_owner
+    from `ggw`.`information_schema`.`tables`
+    where table_schema = 'dbt'
+    
+  
+[0m17:44:11.041166 [debug] [ThreadPool]: Databricks adapter: Cursor(session-id=01ef2772-8ae6-1dc6-b192-c2c48936b0a5, command-id=Unknown) - Created cursor
+[0m17:44:14.532367 [debug] [ThreadPool]: SQL status: OK in 3.490000009536743 seconds
+[0m17:44:14.536651 [debug] [ThreadPool]: Databricks adapter: Cursor(session-id=01ef2772-8ae6-1dc6-b192-c2c48936b0a5, command-id=01ef2772-92a2-1f36-9de6-8716e0b2044b) - Closing cursor
+[0m17:44:14.537687 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(id=5771270368, session-id=01ef2772-8ae6-1dc6-b192-c2c48936b0a5, name=list_ggw_dbt, idle-time=4.0531158447265625e-06s, acquire-count=0, language=None, thread-identifier=(95914, 13170143232), compute-name=) - Released connection
+[0m17:44:14.538838 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '5ea880ad-77ff-46d6-86cb-bc7e136bf8a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1685550a0>]}
+[0m17:44:14.539435 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(id=5771264224, session-id=None, name=master, idle-time=16.881346702575684s, acquire-count=1, language=None, thread-identifier=(95914, 8441035456), compute-name=) - Checking idleness
+[0m17:44:14.539787 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(id=5771264224, session-id=None, name=master, idle-time=16.8817138671875s, acquire-count=1, language=None, thread-identifier=(95914, 8441035456), compute-name=) - Retrieving connection
+[0m17:44:14.540103 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(id=5771264224, session-id=None, name=master, idle-time=16.8820378780365s, acquire-count=1, language=None, thread-identifier=(95914, 8441035456), compute-name=) - Checking idleness
+[0m17:44:14.540391 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(id=5771264224, session-id=None, name=master, idle-time=16.88232970237732s, acquire-count=1, language=None, thread-identifier=(95914, 8441035456), compute-name=) - Retrieving connection
+[0m17:44:14.540655 [debug] [MainThread]: Spark adapter: NotImplemented: add_begin_query
+[0m17:44:14.540912 [debug] [MainThread]: Spark adapter: NotImplemented: commit
+[0m17:44:14.541191 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(id=5771264224, session-id=None, name=master, idle-time=1.1920928955078125e-06s, acquire-count=0, language=None, thread-identifier=(95914, 8441035456), compute-name=) - Released connection
+[0m17:44:14.541622 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m17:44:14.541965 [info ] [MainThread]: 
+[0m17:44:14.546111 [debug] [Thread-1 (]: Began running node model.football_538.stg_football_matches
+[0m17:44:14.546626 [info ] [Thread-1 (]: 1 of 3 START sql view model dbt.stg_football_matches ........................... [RUN]
+[0m17:44:14.547111 [debug] [Thread-1 (]: Databricks adapter: DatabricksDBTConnection(id=5771270368, session-id=01ef2772-8ae6-1dc6-b192-c2c48936b0a5, name=list_ggw_dbt, idle-time=0.009405136108398438s, acquire-count=0, language=None, thread-identifier=(95914, 13170143232), compute-name=) - Checking idleness
+[0m17:44:14.547397 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_ggw_dbt, now model.football_538.stg_football_matches)
+[0m17:44:14.547696 [debug] [Thread-1 (]: Databricks adapter: DatabricksDBTConnection(id=5771270368, session-id=01ef2772-8ae6-1dc6-b192-c2c48936b0a5, name=model.football_538.stg_football_matches, idle-time=0.01001286506652832s, acquire-count=0, language=None, thread-identifier=(95914, 13170143232), compute-name=) - Reusing connection previously named list_ggw_dbt
+[0m17:44:14.547991 [debug] [Thread-1 (]: Databricks adapter: DatabricksDBTConnection(id=5771270368, session-id=01ef2772-8ae6-1dc6-b192-c2c48936b0a5, name=model.football_538.stg_football_matches, idle-time=0.010306119918823242s, acquire-count=1, language=sql, thread-identifier=(95914, 13170143232), compute-name=) - Acquired connection on thread (95914, 13170143232), using default compute resource for model '`ggw`.`dbt`.`stg_football_matches`'
+[0m17:44:14.548291 [debug] [Thread-1 (]: Began compiling node model.football_538.stg_football_matches
+[0m17:44:14.554437 [debug] [Thread-1 (]: Writing injected SQL for node "model.football_538.stg_football_matches"
+[0m17:44:14.555838 [debug] [Thread-1 (]: Began executing node model.football_538.stg_football_matches
+[0m17:44:14.575596 [debug] [Thread-1 (]: Writing runtime sql for node "model.football_538.stg_football_matches"
+[0m17:44:14.576728 [debug] [Thread-1 (]: Databricks adapter: DatabricksDBTConnection(id=5771270368, session-id=01ef2772-8ae6-1dc6-b192-c2c48936b0a5, name=model.football_538.stg_football_matches, idle-time=0.03906893730163574s, acquire-count=1, language=sql, thread-identifier=(95914, 13170143232), compute-name=) - Checking idleness
+[0m17:44:14.576896 [debug] [Thread-1 (]: Databricks adapter: DatabricksDBTConnection(id=5771270368, session-id=01ef2772-8ae6-1dc6-b192-c2c48936b0a5, name=model.football_538.stg_football_matches, idle-time=0.03926396369934082s, acquire-count=1, language=sql, thread-identifier=(95914, 13170143232), compute-name=) - Retrieving connection
+[0m17:44:14.577026 [debug] [Thread-1 (]: Using databricks connection "model.football_538.stg_football_matches"
+[0m17:44:14.577173 [debug] [Thread-1 (]: On model.football_538.stg_football_matches: /* {"app": "dbt", "dbt_version": "1.8.2", "dbt_databricks_version": "1.8.1", "databricks_sql_connector_version": "3.1.2", "profile_name": "quickstart", "target_name": "dev", "node_id": "model.football_538.stg_football_matches"} */
+create or replace view `ggw`.`dbt`.`stg_football_matches`
+  
+  
+  
+  as
+    select * from dbt.stg_football_matches
+
+[0m17:44:14.577315 [debug] [Thread-1 (]: Databricks adapter: Cursor(session-id=01ef2772-8ae6-1dc6-b192-c2c48936b0a5, command-id=Unknown) - Created cursor
+[0m17:44:15.587050 [debug] [Thread-1 (]: Databricks adapter: Cursor(session-id=01ef2772-8ae6-1dc6-b192-c2c48936b0a5, command-id=Unknown) - Closing cursor
+[0m17:44:15.588236 [debug] [Thread-1 (]: Databricks adapter: Exception while trying to execute query
+/* {"app": "dbt", "dbt_version": "1.8.2", "dbt_databricks_version": "1.8.1", "databricks_sql_connector_version": "3.1.2", "profile_name": "quickstart", "target_name": "dev", "node_id": "model.football_538.stg_football_matches"} */
+create or replace view `ggw`.`dbt`.`stg_football_matches`
+  
+  
+  
+  as
+    select * from dbt.stg_football_matches
+
+: [TABLE_OR_VIEW_NOT_FOUND] The table or view `dbt`.`stg_football_matches` cannot be found. Verify the spelling and correctness of the schema and catalog.
+If you did not qualify the name with a schema, verify the current_schema() output, or qualify the name with the correct schema and catalog.
+To tolerate the error on drop use DROP VIEW IF EXISTS or DROP TABLE IF EXISTS. SQLSTATE: 42P01; line 7 pos 18
+Error properties: diagnostic-info=org.apache.hive.service.cli.HiveSQLException: Error running query: [TABLE_OR_VIEW_NOT_FOUND] org.apache.spark.sql.catalyst.ExtendedAnalysisException: [TABLE_OR_VIEW_NOT_FOUND] The table or view `dbt`.`stg_football_matches` cannot be found. Verify the spelling and correctness of the schema and catalog.
+If you did not qualify the name with a schema, verify the current_schema() output, or qualify the name with the correct schema and catalog.
+To tolerate the error on drop use DROP VIEW IF EXISTS or DROP TABLE IF EXISTS. SQLSTATE: 42P01; line 7 pos 18
+	at org.apache.spark.sql.hive.thriftserver.HiveThriftServerErrors$.runningQueryError(HiveThriftServerErrors.scala:49)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.$anonfun$execute$1(SparkExecuteStatementOperation.scala:718)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at com.databricks.unity.UCSEphemeralState$Handle.runWith(UCSEphemeralState.scala:45)
+	at com.databricks.unity.HandleImpl.runWith(UCSHandle.scala:103)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.org$apache$spark$sql$hive$thriftserver$SparkExecuteStatementOperation$$execute(SparkExecuteStatementOperation.scala:560)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2$$anon$3.$anonfun$run$2(SparkExecuteStatementOperation.scala:403)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at com.databricks.logging.UsageLogging.withAttributionContext(UsageLogging.scala:429)
+	at com.databricks.logging.UsageLogging.withAttributionContext$(UsageLogging.scala:427)
+	at com.databricks.spark.util.PublicDBLogging.withAttributionContext(DatabricksSparkUsageLogger.scala:27)
+	at com.databricks.logging.UsageLogging.withAttributionTags(UsageLogging.scala:481)
+	at com.databricks.logging.UsageLogging.withAttributionTags$(UsageLogging.scala:464)
+	at com.databricks.spark.util.PublicDBLogging.withAttributionTags(DatabricksSparkUsageLogger.scala:27)
+	at com.databricks.spark.util.PublicDBLogging.withAttributionTags0(DatabricksSparkUsageLogger.scala:72)
+	at com.databricks.spark.util.DatabricksSparkUsageLogger.withAttributionTags(DatabricksSparkUsageLogger.scala:172)
+	at com.databricks.spark.util.UsageLogging.$anonfun$withAttributionTags$1(UsageLogger.scala:491)
+	at com.databricks.spark.util.UsageLogging$.withAttributionTags(UsageLogger.scala:603)
+	at com.databricks.spark.util.UsageLogging$.withAttributionTags(UsageLogger.scala:612)
+	at com.databricks.spark.util.UsageLogging.withAttributionTags(UsageLogger.scala:491)
+	at com.databricks.spark.util.UsageLogging.withAttributionTags$(UsageLogger.scala:489)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.withAttributionTags(SparkExecuteStatementOperation.scala:67)
+	at org.apache.spark.sql.hive.thriftserver.ThriftLocalProperties.$anonfun$withLocalProperties$11(ThriftLocalProperties.scala:190)
+	at com.databricks.spark.util.IdentityClaim$.withClaim(IdentityClaim.scala:48)
+	at org.apache.spark.sql.hive.thriftserver.ThriftLocalProperties.withLocalProperties(ThriftLocalProperties.scala:185)
+	at org.apache.spark.sql.hive.thriftserver.ThriftLocalProperties.withLocalProperties$(ThriftLocalProperties.scala:71)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.withLocalProperties(SparkExecuteStatementOperation.scala:67)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2$$anon$3.run(SparkExecuteStatementOperation.scala:381)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2$$anon$3.run(SparkExecuteStatementOperation.scala:367)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1899)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2.run(SparkExecuteStatementOperation.scala:415)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: org.apache.spark.sql.catalyst.ExtendedAnalysisException: [TABLE_OR_VIEW_NOT_FOUND] The table or view `dbt`.`stg_football_matches` cannot be found. Verify the spelling and correctness of the schema and catalog.
+If you did not qualify the name with a schema, verify the current_schema() output, or qualify the name with the correct schema and catalog.
+To tolerate the error on drop use DROP VIEW IF EXISTS or DROP TABLE IF EXISTS. SQLSTATE: 42P01; line 7 pos 18
+	at org.apache.spark.sql.catalyst.ExtendedAnalysisException.copyPlan(ExtendedAnalysisException.scala:91)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.$anonfun$execute$1(SparkExecuteStatementOperation.scala:688)
+	... 36 more
+, operation-id=01ef2772-94cb-1380-8a60-f9d4b6c95502
+[0m17:44:15.589710 [debug] [Thread-1 (]: Databricks adapter: DatabricksDBTConnection(id=5771270368, session-id=01ef2772-8ae6-1dc6-b192-c2c48936b0a5, name=model.football_538.stg_football_matches, idle-time=7.867813110351562e-06s, acquire-count=0, language=sql, thread-identifier=(95914, 13170143232), compute-name=) - Released connection
+[0m17:44:15.601882 [debug] [Thread-1 (]: Runtime Error in model stg_football_matches (models/538_football/staging/stg_football_matches.sql)
+  [TABLE_OR_VIEW_NOT_FOUND] The table or view `dbt`.`stg_football_matches` cannot be found. Verify the spelling and correctness of the schema and catalog.
+  If you did not qualify the name with a schema, verify the current_schema() output, or qualify the name with the correct schema and catalog.
+  To tolerate the error on drop use DROP VIEW IF EXISTS or DROP TABLE IF EXISTS. SQLSTATE: 42P01; line 7 pos 18
+[0m17:44:15.602327 [debug] [Thread-1 (]: Databricks adapter: DatabricksDBTConnection(id=5771270368, session-id=01ef2772-8ae6-1dc6-b192-c2c48936b0a5, name=model.football_538.stg_football_matches, idle-time=2.1457672119140625e-06s, acquire-count=0, language=sql, thread-identifier=(95914, 13170143232), compute-name=) - Released connection
+[0m17:44:15.603661 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '5ea880ad-77ff-46d6-86cb-bc7e136bf8a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x157fda0f0>]}
+[0m17:44:15.604222 [error] [Thread-1 (]: 1 of 3 ERROR creating sql view model dbt.stg_football_matches .................. [[31mERROR[0m in 1.06s]
+[0m17:44:15.604672 [debug] [Thread-1 (]: Finished running node model.football_538.stg_football_matches
+[0m17:44:15.604972 [debug] [Thread-1 (]: Began running node model.football_538.stg_football_rankings
+[0m17:44:15.605914 [info ] [Thread-1 (]: 2 of 3 START sql view model dbt.stg_football_rankings .......................... [RUN]
+[0m17:44:15.606390 [debug] [Thread-1 (]: Databricks adapter: DatabricksDBTConnection(id=5771270368, session-id=01ef2772-8ae6-1dc6-b192-c2c48936b0a5, name=model.football_538.stg_football_matches, idle-time=0.004080057144165039s, acquire-count=0, language=sql, thread-identifier=(95914, 13170143232), compute-name=) - Checking idleness
+[0m17:44:15.606640 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.football_538.stg_football_matches, now model.football_538.stg_football_rankings)
+[0m17:44:15.606906 [debug] [Thread-1 (]: Databricks adapter: DatabricksDBTConnection(id=5771270368, session-id=01ef2772-8ae6-1dc6-b192-c2c48936b0a5, name=model.football_538.stg_football_rankings, idle-time=0.004614830017089844s, acquire-count=0, language=sql, thread-identifier=(95914, 13170143232), compute-name=) - Reusing connection previously named model.football_538.stg_football_matches
+[0m17:44:15.607162 [debug] [Thread-1 (]: Databricks adapter: DatabricksDBTConnection(id=5771270368, session-id=01ef2772-8ae6-1dc6-b192-c2c48936b0a5, name=model.football_538.stg_football_rankings, idle-time=0.004876136779785156s, acquire-count=1, language=sql, thread-identifier=(95914, 13170143232), compute-name=) - Acquired connection on thread (95914, 13170143232), using default compute resource for model '`ggw`.`dbt`.`stg_football_rankings`'
+[0m17:44:15.607395 [debug] [Thread-1 (]: Began compiling node model.football_538.stg_football_rankings
+[0m17:44:15.609054 [debug] [Thread-1 (]: Writing injected SQL for node "model.football_538.stg_football_rankings"
+[0m17:44:15.609671 [debug] [Thread-1 (]: Began executing node model.football_538.stg_football_rankings
+[0m17:44:15.611786 [debug] [Thread-1 (]: Writing runtime sql for node "model.football_538.stg_football_rankings"
+[0m17:44:15.612342 [debug] [Thread-1 (]: Databricks adapter: DatabricksDBTConnection(id=5771270368, session-id=01ef2772-8ae6-1dc6-b192-c2c48936b0a5, name=model.football_538.stg_football_rankings, idle-time=0.01005697250366211s, acquire-count=1, language=sql, thread-identifier=(95914, 13170143232), compute-name=) - Checking idleness
+[0m17:44:15.612573 [debug] [Thread-1 (]: Databricks adapter: DatabricksDBTConnection(id=5771270368, session-id=01ef2772-8ae6-1dc6-b192-c2c48936b0a5, name=model.football_538.stg_football_rankings, idle-time=0.010303020477294922s, acquire-count=1, language=sql, thread-identifier=(95914, 13170143232), compute-name=) - Retrieving connection
+[0m17:44:15.612740 [debug] [Thread-1 (]: Using databricks connection "model.football_538.stg_football_rankings"
+[0m17:44:15.612958 [debug] [Thread-1 (]: On model.football_538.stg_football_rankings: /* {"app": "dbt", "dbt_version": "1.8.2", "dbt_databricks_version": "1.8.1", "databricks_sql_connector_version": "3.1.2", "profile_name": "quickstart", "target_name": "dev", "node_id": "model.football_538.stg_football_rankings"} */
+create or replace view `ggw`.`dbt`.`stg_football_rankings`
+  
+  
+  
+  as
+    select * from dbt.stg_football_rankings
+
+[0m17:44:15.613175 [debug] [Thread-1 (]: Databricks adapter: Cursor(session-id=01ef2772-8ae6-1dc6-b192-c2c48936b0a5, command-id=Unknown) - Created cursor
+[0m17:44:16.148145 [debug] [Thread-1 (]: Databricks adapter: Cursor(session-id=01ef2772-8ae6-1dc6-b192-c2c48936b0a5, command-id=Unknown) - Closing cursor
+[0m17:44:16.150778 [debug] [Thread-1 (]: Databricks adapter: Exception while trying to execute query
+/* {"app": "dbt", "dbt_version": "1.8.2", "dbt_databricks_version": "1.8.1", "databricks_sql_connector_version": "3.1.2", "profile_name": "quickstart", "target_name": "dev", "node_id": "model.football_538.stg_football_rankings"} */
+create or replace view `ggw`.`dbt`.`stg_football_rankings`
+  
+  
+  
+  as
+    select * from dbt.stg_football_rankings
+
+: [TABLE_OR_VIEW_NOT_FOUND] The table or view `dbt`.`stg_football_rankings` cannot be found. Verify the spelling and correctness of the schema and catalog.
+If you did not qualify the name with a schema, verify the current_schema() output, or qualify the name with the correct schema and catalog.
+To tolerate the error on drop use DROP VIEW IF EXISTS or DROP TABLE IF EXISTS. SQLSTATE: 42P01; line 7 pos 18
+Error properties: diagnostic-info=org.apache.hive.service.cli.HiveSQLException: Error running query: [TABLE_OR_VIEW_NOT_FOUND] org.apache.spark.sql.catalyst.ExtendedAnalysisException: [TABLE_OR_VIEW_NOT_FOUND] The table or view `dbt`.`stg_football_rankings` cannot be found. Verify the spelling and correctness of the schema and catalog.
+If you did not qualify the name with a schema, verify the current_schema() output, or qualify the name with the correct schema and catalog.
+To tolerate the error on drop use DROP VIEW IF EXISTS or DROP TABLE IF EXISTS. SQLSTATE: 42P01; line 7 pos 18
+	at org.apache.spark.sql.hive.thriftserver.HiveThriftServerErrors$.runningQueryError(HiveThriftServerErrors.scala:49)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.$anonfun$execute$1(SparkExecuteStatementOperation.scala:718)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at com.databricks.unity.UCSEphemeralState$Handle.runWith(UCSEphemeralState.scala:45)
+	at com.databricks.unity.HandleImpl.runWith(UCSHandle.scala:103)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.org$apache$spark$sql$hive$thriftserver$SparkExecuteStatementOperation$$execute(SparkExecuteStatementOperation.scala:560)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2$$anon$3.$anonfun$run$2(SparkExecuteStatementOperation.scala:403)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at com.databricks.logging.UsageLogging.withAttributionContext(UsageLogging.scala:429)
+	at com.databricks.logging.UsageLogging.withAttributionContext$(UsageLogging.scala:427)
+	at com.databricks.spark.util.PublicDBLogging.withAttributionContext(DatabricksSparkUsageLogger.scala:27)
+	at com.databricks.logging.UsageLogging.withAttributionTags(UsageLogging.scala:481)
+	at com.databricks.logging.UsageLogging.withAttributionTags$(UsageLogging.scala:464)
+	at com.databricks.spark.util.PublicDBLogging.withAttributionTags(DatabricksSparkUsageLogger.scala:27)
+	at com.databricks.spark.util.PublicDBLogging.withAttributionTags0(DatabricksSparkUsageLogger.scala:72)
+	at com.databricks.spark.util.DatabricksSparkUsageLogger.withAttributionTags(DatabricksSparkUsageLogger.scala:172)
+	at com.databricks.spark.util.UsageLogging.$anonfun$withAttributionTags$1(UsageLogger.scala:491)
+	at com.databricks.spark.util.UsageLogging$.withAttributionTags(UsageLogger.scala:603)
+	at com.databricks.spark.util.UsageLogging$.withAttributionTags(UsageLogger.scala:612)
+	at com.databricks.spark.util.UsageLogging.withAttributionTags(UsageLogger.scala:491)
+	at com.databricks.spark.util.UsageLogging.withAttributionTags$(UsageLogger.scala:489)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.withAttributionTags(SparkExecuteStatementOperation.scala:67)
+	at org.apache.spark.sql.hive.thriftserver.ThriftLocalProperties.$anonfun$withLocalProperties$11(ThriftLocalProperties.scala:190)
+	at com.databricks.spark.util.IdentityClaim$.withClaim(IdentityClaim.scala:48)
+	at org.apache.spark.sql.hive.thriftserver.ThriftLocalProperties.withLocalProperties(ThriftLocalProperties.scala:185)
+	at org.apache.spark.sql.hive.thriftserver.ThriftLocalProperties.withLocalProperties$(ThriftLocalProperties.scala:71)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.withLocalProperties(SparkExecuteStatementOperation.scala:67)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2$$anon$3.run(SparkExecuteStatementOperation.scala:381)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2$$anon$3.run(SparkExecuteStatementOperation.scala:367)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1899)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2.run(SparkExecuteStatementOperation.scala:415)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: org.apache.spark.sql.catalyst.ExtendedAnalysisException: [TABLE_OR_VIEW_NOT_FOUND] The table or view `dbt`.`stg_football_rankings` cannot be found. Verify the spelling and correctness of the schema and catalog.
+If you did not qualify the name with a schema, verify the current_schema() output, or qualify the name with the correct schema and catalog.
+To tolerate the error on drop use DROP VIEW IF EXISTS or DROP TABLE IF EXISTS. SQLSTATE: 42P01; line 7 pos 18
+	at org.apache.spark.sql.catalyst.ExtendedAnalysisException.copyPlan(ExtendedAnalysisException.scala:91)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.$anonfun$execute$1(SparkExecuteStatementOperation.scala:688)
+	... 36 more
+, operation-id=01ef2772-955c-158d-9dec-43695ff2e183
+[0m17:44:16.153515 [debug] [Thread-1 (]: Databricks adapter: DatabricksDBTConnection(id=5771270368, session-id=01ef2772-8ae6-1dc6-b192-c2c48936b0a5, name=model.football_538.stg_football_rankings, idle-time=1.0013580322265625e-05s, acquire-count=0, language=sql, thread-identifier=(95914, 13170143232), compute-name=) - Released connection
+[0m17:44:16.155952 [debug] [Thread-1 (]: Runtime Error in model stg_football_rankings (models/538_football/staging/stg_football_rankings.sql)
+  [TABLE_OR_VIEW_NOT_FOUND] The table or view `dbt`.`stg_football_rankings` cannot be found. Verify the spelling and correctness of the schema and catalog.
+  If you did not qualify the name with a schema, verify the current_schema() output, or qualify the name with the correct schema and catalog.
+  To tolerate the error on drop use DROP VIEW IF EXISTS or DROP TABLE IF EXISTS. SQLSTATE: 42P01; line 7 pos 18
+[0m17:44:16.156341 [debug] [Thread-1 (]: Databricks adapter: DatabricksDBTConnection(id=5771270368, session-id=01ef2772-8ae6-1dc6-b192-c2c48936b0a5, name=model.football_538.stg_football_rankings, idle-time=2.1457672119140625e-06s, acquire-count=0, language=sql, thread-identifier=(95914, 13170143232), compute-name=) - Released connection
+[0m17:44:16.156652 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '5ea880ad-77ff-46d6-86cb-bc7e136bf8a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1686d3d70>]}
+[0m17:44:16.157093 [error] [Thread-1 (]: 2 of 3 ERROR creating sql view model dbt.stg_football_rankings ................. [[31mERROR[0m in 0.55s]
+[0m17:44:16.157486 [debug] [Thread-1 (]: Finished running node model.football_538.stg_football_rankings
+[0m17:44:16.158070 [debug] [Thread-1 (]: Began running node model.football_538.mart_football_information
+[0m17:44:16.158508 [info ] [Thread-1 (]: 3 of 3 SKIP relation dbt.mart_football_information ............................. [[33mSKIP[0m]
+[0m17:44:16.158893 [debug] [Thread-1 (]: Finished running node model.football_538.mart_football_information
+[0m17:44:16.159663 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(id=5771264224, session-id=None, name=master, idle-time=1.6184430122375488s, acquire-count=0, language=None, thread-identifier=(95914, 8441035456), compute-name=) - Checking idleness
+[0m17:44:16.160009 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(id=5771264224, session-id=None, name=master, idle-time=1.6188161373138428s, acquire-count=0, language=None, thread-identifier=(95914, 8441035456), compute-name=) - Reusing connection previously named master
+[0m17:44:16.160268 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(id=5771264224, session-id=None, name=master, idle-time=1.6190850734710693s, acquire-count=1, language=None, thread-identifier=(95914, 8441035456), compute-name=) - Acquired connection on thread (95914, 8441035456), using default compute resource
+[0m17:44:16.160513 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(id=5771264224, session-id=None, name=master, idle-time=1.6193373203277588s, acquire-count=1, language=None, thread-identifier=(95914, 8441035456), compute-name=) - Checking idleness
+[0m17:44:16.160726 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(id=5771264224, session-id=None, name=master, idle-time=1.619551420211792s, acquire-count=1, language=None, thread-identifier=(95914, 8441035456), compute-name=) - Retrieving connection
+[0m17:44:16.160923 [debug] [MainThread]: On master: ROLLBACK
+[0m17:44:16.161121 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m17:44:16.590642 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(id=5771264224, session-id=01ef2772-95d3-17c3-b169-6ada670001d7, name=master, idle-time=7.867813110351562e-06s, acquire-count=1, language=None, thread-identifier=(95914, 8441035456), compute-name=) - Connection created
+[0m17:44:16.592091 [debug] [MainThread]: Databricks adapter: NotImplemented: rollback
+[0m17:44:16.592725 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(id=5771264224, session-id=01ef2772-95d3-17c3-b169-6ada670001d7, name=master, idle-time=0.0022399425506591797s, acquire-count=1, language=None, thread-identifier=(95914, 8441035456), compute-name=) - Checking idleness
+[0m17:44:16.593252 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(id=5771264224, session-id=01ef2772-95d3-17c3-b169-6ada670001d7, name=master, idle-time=0.0027861595153808594s, acquire-count=1, language=None, thread-identifier=(95914, 8441035456), compute-name=) - Retrieving connection
+[0m17:44:16.594342 [debug] [MainThread]: Spark adapter: NotImplemented: add_begin_query
+[0m17:44:16.595057 [debug] [MainThread]: Spark adapter: NotImplemented: commit
+[0m17:44:16.595641 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(id=5771264224, session-id=01ef2772-95d3-17c3-b169-6ada670001d7, name=master, idle-time=3.0994415283203125e-06s, acquire-count=0, language=None, thread-identifier=(95914, 8441035456), compute-name=) - Released connection
+[0m17:44:16.597003 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m17:44:16.597707 [debug] [MainThread]: On master: ROLLBACK
+[0m17:44:16.598120 [debug] [MainThread]: Databricks adapter: NotImplemented: rollback
+[0m17:44:16.598486 [debug] [MainThread]: On master: Close
+[0m17:44:16.599155 [debug] [MainThread]: Databricks adapter: Connection(session-id=01ef2772-95d3-17c3-b169-6ada670001d7) - Closing connection
+[0m17:44:16.766548 [debug] [MainThread]: Connection 'model.football_538.stg_football_rankings' was properly closed.
+[0m17:44:16.769109 [debug] [MainThread]: On model.football_538.stg_football_rankings: ROLLBACK
+[0m17:44:16.769807 [debug] [MainThread]: Databricks adapter: NotImplemented: rollback
+[0m17:44:16.771676 [debug] [MainThread]: On model.football_538.stg_football_rankings: Close
+[0m17:44:16.774257 [debug] [MainThread]: Databricks adapter: Connection(session-id=01ef2772-8ae6-1dc6-b192-c2c48936b0a5) - Closing connection
+[0m17:44:16.930177 [info ] [MainThread]: 
+[0m17:44:16.931046 [info ] [MainThread]: Finished running 3 view models in 0 hours 0 minutes and 19.27 seconds (19.27s).
+[0m17:44:16.932114 [debug] [MainThread]: Command end result
+[0m17:44:16.961181 [info ] [MainThread]: 
+[0m17:44:16.961557 [info ] [MainThread]: [31mCompleted with 2 errors and 0 warnings:[0m
+[0m17:44:16.961789 [info ] [MainThread]: 
+[0m17:44:16.962061 [error] [MainThread]:   Runtime Error in model stg_football_matches (models/538_football/staging/stg_football_matches.sql)
+  [TABLE_OR_VIEW_NOT_FOUND] The table or view `dbt`.`stg_football_matches` cannot be found. Verify the spelling and correctness of the schema and catalog.
+  If you did not qualify the name with a schema, verify the current_schema() output, or qualify the name with the correct schema and catalog.
+  To tolerate the error on drop use DROP VIEW IF EXISTS or DROP TABLE IF EXISTS. SQLSTATE: 42P01; line 7 pos 18
+[0m17:44:16.962281 [info ] [MainThread]: 
+[0m17:44:16.962500 [error] [MainThread]:   Runtime Error in model stg_football_rankings (models/538_football/staging/stg_football_rankings.sql)
+  [TABLE_OR_VIEW_NOT_FOUND] The table or view `dbt`.`stg_football_rankings` cannot be found. Verify the spelling and correctness of the schema and catalog.
+  If you did not qualify the name with a schema, verify the current_schema() output, or qualify the name with the correct schema and catalog.
+  To tolerate the error on drop use DROP VIEW IF EXISTS or DROP TABLE IF EXISTS. SQLSTATE: 42P01; line 7 pos 18
+[0m17:44:16.962695 [info ] [MainThread]: 
+[0m17:44:16.962891 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=2 SKIP=1 TOTAL=3
+[0m17:44:16.964981 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 27.630056, "process_user_time": 3.092375, "process_kernel_time": 2.628012, "process_mem_max_rss": "226787328", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m17:44:16.965265 [debug] [MainThread]: Command `dbt run` failed at 17:44:16.965226 after 27.63 seconds
+[0m17:44:16.965451 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1210974d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12452c950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12452ce30>]}
+[0m17:44:16.965606 [debug] [MainThread]: Flushing usage events
+[0m17:48:35.623810 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106ad3c80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106de8b00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106de87a0>]}
+
+
+============================== 17:48:35.626126 | 3abbeb47-d0c1-4af0-a190-bfb95f757c3b ==============================
+[0m17:48:35.626126 [info ] [MainThread]: Running with dbt=1.8.2
+[0m17:48:35.626404 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'profiles_dir': '/Users/glenn.wiebe/code/dbt-guide-starting-point', 'log_path': '/Users/glenn.wiebe/code/dbt-guide-starting-point/logs', 'version_check': 'True', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt run --profile quickstart', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m17:48:35.703289 [debug] [MainThread]: Spark adapter: Setting pyhive.hive logging to ERROR
+[0m17:48:35.703553 [debug] [MainThread]: Spark adapter: Setting thrift.transport logging to ERROR
+[0m17:48:35.703695 [debug] [MainThread]: Spark adapter: Setting thrift.protocol logging to ERROR
+[0m17:48:36.527859 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '3abbeb47-d0c1-4af0-a190-bfb95f757c3b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x14e0ccc80>]}
+[0m17:48:36.544567 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '3abbeb47-d0c1-4af0-a190-bfb95f757c3b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106389100>]}
+[0m17:48:36.544819 [info ] [MainThread]: Registered adapter: databricks=1.8.1
+[0m17:48:36.556421 [debug] [MainThread]: checksum: 10057920b74e669a4d2b43817371676f9c89d295e0b303fac7d0dd0b717c7c7d, vars: {}, profile: quickstart, target: , version: 1.8.2
+[0m17:48:36.616100 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 2 files changed.
+[0m17:48:36.616431 [debug] [MainThread]: Partial parsing: updated file: football_538://models/538_football/staging/stg_football_rankings.sql
+[0m17:48:36.616609 [debug] [MainThread]: Partial parsing: updated file: football_538://models/538_football/staging/stg_football_matches.sql
+[0m17:48:36.746886 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.football_538.staging
+- models.football_538.marts
+[0m17:48:36.749080 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '3abbeb47-d0c1-4af0-a190-bfb95f757c3b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10686de50>]}
+[0m17:48:36.782708 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '3abbeb47-d0c1-4af0-a190-bfb95f757c3b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x14d25a180>]}
+[0m17:48:36.782964 [info ] [MainThread]: Found 3 models, 586 macros
+[0m17:48:36.783112 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '3abbeb47-d0c1-4af0-a190-bfb95f757c3b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x14e5db5f0>]}
+[0m17:48:36.783823 [info ] [MainThread]: 
+[0m17:48:36.784114 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(id=5609804224, session-id=None, name=master, idle-time=0s, acquire-count=0, language=None, thread-identifier=(6303, 8441035456), compute-name=) - Creating connection
+[0m17:48:36.784257 [debug] [MainThread]: Acquiring new databricks connection 'master'
+[0m17:48:36.784383 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(id=5609804224, session-id=None, name=master, idle-time=3.0994415283203125e-06s, acquire-count=1, language=None, thread-identifier=(6303, 8441035456), compute-name=) - Acquired connection on thread (6303, 8441035456), using default compute resource
+[0m17:48:36.786567 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(id=5589274688, session-id=None, name=list_ggw, idle-time=0s, acquire-count=0, language=None, thread-identifier=(6303, 6170996736), compute-name=) - Creating connection
+[0m17:48:36.786745 [debug] [ThreadPool]: Acquiring new databricks connection 'list_ggw'
+[0m17:48:36.786875 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(id=5589274688, session-id=None, name=list_ggw, idle-time=9.5367431640625e-07s, acquire-count=1, language=None, thread-identifier=(6303, 6170996736), compute-name=) - Acquired connection on thread (6303, 6170996736), using default compute resource
+[0m17:48:36.787013 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(id=5589274688, session-id=None, name=list_ggw, idle-time=0.00014519691467285156s, acquire-count=1, language=None, thread-identifier=(6303, 6170996736), compute-name=) - Checking idleness
+[0m17:48:36.787126 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(id=5589274688, session-id=None, name=list_ggw, idle-time=0.0002601146697998047s, acquire-count=1, language=None, thread-identifier=(6303, 6170996736), compute-name=) - Retrieving connection
+[0m17:48:36.787228 [debug] [ThreadPool]: Using databricks connection "list_ggw"
+[0m17:48:36.787330 [debug] [ThreadPool]: On list_ggw: GetSchemas(database=ggw, schema=None)
+[0m17:48:36.787425 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:48:37.356426 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(id=5589274688, session-id=01ef2773-3144-15b3-bbd1-87134160976e, name=list_ggw, idle-time=1.3828277587890625e-05s, acquire-count=1, language=None, thread-identifier=(6303, 6170996736), compute-name=) - Connection created
+[0m17:48:37.358072 [debug] [ThreadPool]: Databricks adapter: Cursor(session-id=01ef2773-3144-15b3-bbd1-87134160976e, command-id=Unknown) - Created cursor
+[0m17:48:38.265530 [debug] [ThreadPool]: SQL status: OK in 1.4800000190734863 seconds
+[0m17:48:38.273722 [debug] [ThreadPool]: Databricks adapter: Cursor(session-id=01ef2773-3144-15b3-bbd1-87134160976e, command-id=01ef2773-316c-1ed8-a586-55e9b6193372) - Closing cursor
+[0m17:48:38.274122 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(id=5589274688, session-id=01ef2773-3144-15b3-bbd1-87134160976e, name=list_ggw, idle-time=2.86102294921875e-06s, acquire-count=0, language=None, thread-identifier=(6303, 6170996736), compute-name=) - Released connection
+[0m17:48:38.275112 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(id=5589274688, session-id=01ef2773-3144-15b3-bbd1-87134160976e, name=list_ggw, idle-time=0.0010001659393310547s, acquire-count=0, language=None, thread-identifier=(6303, 6170996736), compute-name=) - Checking idleness
+[0m17:48:38.275368 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_ggw, now list_ggw_dbt)
+[0m17:48:38.275587 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(id=5589274688, session-id=01ef2773-3144-15b3-bbd1-87134160976e, name=list_ggw_dbt, idle-time=0.0014848709106445312s, acquire-count=0, language=None, thread-identifier=(6303, 6170996736), compute-name=) - Reusing connection previously named list_ggw
+[0m17:48:38.275799 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(id=5589274688, session-id=01ef2773-3144-15b3-bbd1-87134160976e, name=list_ggw_dbt, idle-time=0.0016989707946777344s, acquire-count=1, language=None, thread-identifier=(6303, 6170996736), compute-name=) - Acquired connection on thread (6303, 6170996736), using default compute resource
+[0m17:48:38.282627 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(id=5589274688, session-id=01ef2773-3144-15b3-bbd1-87134160976e, name=list_ggw_dbt, idle-time=0.008517026901245117s, acquire-count=1, language=None, thread-identifier=(6303, 6170996736), compute-name=) - Checking idleness
+[0m17:48:38.282860 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(id=5589274688, session-id=01ef2773-3144-15b3-bbd1-87134160976e, name=list_ggw_dbt, idle-time=0.008762121200561523s, acquire-count=1, language=None, thread-identifier=(6303, 6170996736), compute-name=) - Retrieving connection
+[0m17:48:38.283065 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(id=5589274688, session-id=01ef2773-3144-15b3-bbd1-87134160976e, name=list_ggw_dbt, idle-time=0.008975028991699219s, acquire-count=1, language=None, thread-identifier=(6303, 6170996736), compute-name=) - Checking idleness
+[0m17:48:38.283239 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(id=5589274688, session-id=01ef2773-3144-15b3-bbd1-87134160976e, name=list_ggw_dbt, idle-time=0.009150981903076172s, acquire-count=1, language=None, thread-identifier=(6303, 6170996736), compute-name=) - Retrieving connection
+[0m17:48:38.283408 [debug] [ThreadPool]: Spark adapter: NotImplemented: add_begin_query
+[0m17:48:38.283558 [debug] [ThreadPool]: Using databricks connection "list_ggw_dbt"
+[0m17:48:38.283739 [debug] [ThreadPool]: On list_ggw_dbt: /* {"app": "dbt", "dbt_version": "1.8.2", "dbt_databricks_version": "1.8.1", "databricks_sql_connector_version": "3.1.2", "profile_name": "quickstart", "target_name": "dev", "connection_name": "list_ggw_dbt"} */
+select
+      table_name,
+      if(table_type in ('EXTERNAL', 'MANAGED', 'MANAGED_SHALLOW_CLONE'), 'table', lower(table_type)) as table_type,
+      lower(data_source_format) as file_format,
+      table_owner
+    from `ggw`.`information_schema`.`tables`
+    where table_schema = 'dbt'
+    
+  
+[0m17:48:38.283933 [debug] [ThreadPool]: Databricks adapter: Cursor(session-id=01ef2773-3144-15b3-bbd1-87134160976e, command-id=Unknown) - Created cursor
+[0m17:48:39.409166 [debug] [ThreadPool]: SQL status: OK in 1.1299999952316284 seconds
+[0m17:48:39.412283 [debug] [ThreadPool]: Databricks adapter: Cursor(session-id=01ef2773-3144-15b3-bbd1-87134160976e, command-id=01ef2773-31f5-15ab-956f-67deed9f276a) - Closing cursor
+[0m17:48:39.413009 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(id=5589274688, session-id=01ef2773-3144-15b3-bbd1-87134160976e, name=list_ggw_dbt, idle-time=3.814697265625e-06s, acquire-count=0, language=None, thread-identifier=(6303, 6170996736), compute-name=) - Released connection
+[0m17:48:39.414031 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '3abbeb47-d0c1-4af0-a190-bfb95f757c3b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x14e5ed400>]}
+[0m17:48:39.414492 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(id=5609804224, session-id=None, name=master, idle-time=2.6300711631774902s, acquire-count=1, language=None, thread-identifier=(6303, 8441035456), compute-name=) - Checking idleness
+[0m17:48:39.414782 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(id=5609804224, session-id=None, name=master, idle-time=2.630375862121582s, acquire-count=1, language=None, thread-identifier=(6303, 8441035456), compute-name=) - Retrieving connection
+[0m17:48:39.415041 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(id=5609804224, session-id=None, name=master, idle-time=2.6306419372558594s, acquire-count=1, language=None, thread-identifier=(6303, 8441035456), compute-name=) - Checking idleness
+[0m17:48:39.415283 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(id=5609804224, session-id=None, name=master, idle-time=2.6308858394622803s, acquire-count=1, language=None, thread-identifier=(6303, 8441035456), compute-name=) - Retrieving connection
+[0m17:48:39.415512 [debug] [MainThread]: Spark adapter: NotImplemented: add_begin_query
+[0m17:48:39.415730 [debug] [MainThread]: Spark adapter: NotImplemented: commit
+[0m17:48:39.415961 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(id=5609804224, session-id=None, name=master, idle-time=9.5367431640625e-07s, acquire-count=0, language=None, thread-identifier=(6303, 8441035456), compute-name=) - Released connection
+[0m17:48:39.416289 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m17:48:39.416571 [info ] [MainThread]: 
+[0m17:48:39.418693 [debug] [Thread-1 (]: Began running node model.football_538.stg_football_matches
+[0m17:48:39.419136 [info ] [Thread-1 (]: 1 of 3 START sql view model dbt.stg_football_matches ........................... [RUN]
+[0m17:48:39.419550 [debug] [Thread-1 (]: Databricks adapter: DatabricksDBTConnection(id=5589274688, session-id=01ef2773-3144-15b3-bbd1-87134160976e, name=list_ggw_dbt, idle-time=0.006531953811645508s, acquire-count=0, language=None, thread-identifier=(6303, 6170996736), compute-name=) - Checking idleness
+[0m17:48:39.419793 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_ggw_dbt, now model.football_538.stg_football_matches)
+[0m17:48:39.420040 [debug] [Thread-1 (]: Databricks adapter: DatabricksDBTConnection(id=5589274688, session-id=01ef2773-3144-15b3-bbd1-87134160976e, name=model.football_538.stg_football_matches, idle-time=0.0070438385009765625s, acquire-count=0, language=None, thread-identifier=(6303, 6170996736), compute-name=) - Reusing connection previously named list_ggw_dbt
+[0m17:48:39.420281 [debug] [Thread-1 (]: Databricks adapter: DatabricksDBTConnection(id=5589274688, session-id=01ef2773-3144-15b3-bbd1-87134160976e, name=model.football_538.stg_football_matches, idle-time=0.007279872894287109s, acquire-count=1, language=sql, thread-identifier=(6303, 6170996736), compute-name=) - Acquired connection on thread (6303, 6170996736), using default compute resource for model '`ggw`.`dbt`.`stg_football_matches`'
+[0m17:48:39.420505 [debug] [Thread-1 (]: Began compiling node model.football_538.stg_football_matches
+[0m17:48:39.425296 [debug] [Thread-1 (]: Writing injected SQL for node "model.football_538.stg_football_matches"
+[0m17:48:39.425945 [debug] [Thread-1 (]: Began executing node model.football_538.stg_football_matches
+[0m17:48:39.441255 [debug] [Thread-1 (]: Writing runtime sql for node "model.football_538.stg_football_matches"
+[0m17:48:39.441947 [debug] [Thread-1 (]: Databricks adapter: DatabricksDBTConnection(id=5589274688, session-id=01ef2773-3144-15b3-bbd1-87134160976e, name=model.football_538.stg_football_matches, idle-time=0.028944015502929688s, acquire-count=1, language=sql, thread-identifier=(6303, 6170996736), compute-name=) - Checking idleness
+[0m17:48:39.442159 [debug] [Thread-1 (]: Databricks adapter: DatabricksDBTConnection(id=5589274688, session-id=01ef2773-3144-15b3-bbd1-87134160976e, name=model.football_538.stg_football_matches, idle-time=0.029180049896240234s, acquire-count=1, language=sql, thread-identifier=(6303, 6170996736), compute-name=) - Retrieving connection
+[0m17:48:39.442309 [debug] [Thread-1 (]: Using databricks connection "model.football_538.stg_football_matches"
+[0m17:48:39.442497 [debug] [Thread-1 (]: On model.football_538.stg_football_matches: /* {"app": "dbt", "dbt_version": "1.8.2", "dbt_databricks_version": "1.8.1", "databricks_sql_connector_version": "3.1.2", "profile_name": "quickstart", "target_name": "dev", "node_id": "model.football_538.stg_football_matches"} */
+create or replace view `ggw`.`dbt`.`stg_football_matches`
+  
+  
+  
+  as
+    -- select * from dbt.stg_football_matches
+select * from dbt.spi_matches_latest
+
+[0m17:48:39.442691 [debug] [Thread-1 (]: Databricks adapter: Cursor(session-id=01ef2773-3144-15b3-bbd1-87134160976e, command-id=Unknown) - Created cursor
+[0m17:48:44.256013 [debug] [Thread-1 (]: SQL status: OK in 4.809999942779541 seconds
+[0m17:48:44.258438 [debug] [Thread-1 (]: Databricks adapter: Cursor(session-id=01ef2773-3144-15b3-bbd1-87134160976e, command-id=01ef2773-329e-159f-a33a-e25548949017) - Closing cursor
+[0m17:48:44.276846 [debug] [Thread-1 (]: Databricks adapter: DatabricksDBTConnection(id=5589274688, session-id=01ef2773-3144-15b3-bbd1-87134160976e, name=model.football_538.stg_football_matches, idle-time=4.76837158203125e-06s, acquire-count=0, language=sql, thread-identifier=(6303, 6170996736), compute-name=) - Released connection
+[0m17:48:44.277555 [debug] [Thread-1 (]: Databricks adapter: DatabricksDBTConnection(id=5589274688, session-id=01ef2773-3144-15b3-bbd1-87134160976e, name=model.football_538.stg_football_matches, idle-time=3.0994415283203125e-06s, acquire-count=0, language=sql, thread-identifier=(6303, 6170996736), compute-name=) - Released connection
+[0m17:48:44.278771 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '3abbeb47-d0c1-4af0-a190-bfb95f757c3b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x14cf66720>]}
+[0m17:48:44.279365 [info ] [Thread-1 (]: 1 of 3 OK created sql view model dbt.stg_football_matches ...................... [[32mOK[0m in 4.86s]
+[0m17:48:44.279871 [debug] [Thread-1 (]: Finished running node model.football_538.stg_football_matches
+[0m17:48:44.280227 [debug] [Thread-1 (]: Began running node model.football_538.stg_football_rankings
+[0m17:48:44.280599 [info ] [Thread-1 (]: 2 of 3 START sql view model dbt.stg_football_rankings .......................... [RUN]
+[0m17:48:44.281195 [debug] [Thread-1 (]: Databricks adapter: DatabricksDBTConnection(id=5589274688, session-id=01ef2773-3144-15b3-bbd1-87134160976e, name=model.football_538.stg_football_matches, idle-time=0.0036220550537109375s, acquire-count=0, language=sql, thread-identifier=(6303, 6170996736), compute-name=) - Checking idleness
+[0m17:48:44.281550 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.football_538.stg_football_matches, now model.football_538.stg_football_rankings)
+[0m17:48:44.281885 [debug] [Thread-1 (]: Databricks adapter: DatabricksDBTConnection(id=5589274688, session-id=01ef2773-3144-15b3-bbd1-87134160976e, name=model.football_538.stg_football_rankings, idle-time=0.004354953765869141s, acquire-count=0, language=sql, thread-identifier=(6303, 6170996736), compute-name=) - Reusing connection previously named model.football_538.stg_football_matches
+[0m17:48:44.282189 [debug] [Thread-1 (]: Databricks adapter: DatabricksDBTConnection(id=5589274688, session-id=01ef2773-3144-15b3-bbd1-87134160976e, name=model.football_538.stg_football_rankings, idle-time=0.00466609001159668s, acquire-count=1, language=sql, thread-identifier=(6303, 6170996736), compute-name=) - Acquired connection on thread (6303, 6170996736), using default compute resource for model '`ggw`.`dbt`.`stg_football_rankings`'
+[0m17:48:44.282471 [debug] [Thread-1 (]: Began compiling node model.football_538.stg_football_rankings
+[0m17:48:44.284180 [debug] [Thread-1 (]: Writing injected SQL for node "model.football_538.stg_football_rankings"
+[0m17:48:44.285155 [debug] [Thread-1 (]: Began executing node model.football_538.stg_football_rankings
+[0m17:48:44.287343 [debug] [Thread-1 (]: Writing runtime sql for node "model.football_538.stg_football_rankings"
+[0m17:48:44.287978 [debug] [Thread-1 (]: Databricks adapter: DatabricksDBTConnection(id=5589274688, session-id=01ef2773-3144-15b3-bbd1-87134160976e, name=model.football_538.stg_football_rankings, idle-time=0.010460138320922852s, acquire-count=1, language=sql, thread-identifier=(6303, 6170996736), compute-name=) - Checking idleness
+[0m17:48:44.288240 [debug] [Thread-1 (]: Databricks adapter: DatabricksDBTConnection(id=5589274688, session-id=01ef2773-3144-15b3-bbd1-87134160976e, name=model.football_538.stg_football_rankings, idle-time=0.010740041732788086s, acquire-count=1, language=sql, thread-identifier=(6303, 6170996736), compute-name=) - Retrieving connection
+[0m17:48:44.288448 [debug] [Thread-1 (]: Using databricks connection "model.football_538.stg_football_rankings"
+[0m17:48:44.288689 [debug] [Thread-1 (]: On model.football_538.stg_football_rankings: /* {"app": "dbt", "dbt_version": "1.8.2", "dbt_databricks_version": "1.8.1", "databricks_sql_connector_version": "3.1.2", "profile_name": "quickstart", "target_name": "dev", "node_id": "model.football_538.stg_football_rankings"} */
+create or replace view `ggw`.`dbt`.`stg_football_rankings`
+  
+  
+  
+  as
+    -- select * from dbt.stg_football_rankings
+select * from dbt.spi_global_rankings
+
+[0m17:48:44.288937 [debug] [Thread-1 (]: Databricks adapter: Cursor(session-id=01ef2773-3144-15b3-bbd1-87134160976e, command-id=Unknown) - Created cursor
+[0m17:48:45.594825 [debug] [Thread-1 (]: SQL status: OK in 1.309999942779541 seconds
+[0m17:48:45.596632 [debug] [Thread-1 (]: Databricks adapter: Cursor(session-id=01ef2773-3144-15b3-bbd1-87134160976e, command-id=01ef2773-3583-10c1-a579-6e53be3cb111) - Closing cursor
+[0m17:48:45.598742 [debug] [Thread-1 (]: Databricks adapter: DatabricksDBTConnection(id=5589274688, session-id=01ef2773-3144-15b3-bbd1-87134160976e, name=model.football_538.stg_football_rankings, idle-time=7.152557373046875e-06s, acquire-count=0, language=sql, thread-identifier=(6303, 6170996736), compute-name=) - Released connection
+[0m17:48:45.599794 [debug] [Thread-1 (]: Databricks adapter: DatabricksDBTConnection(id=5589274688, session-id=01ef2773-3144-15b3-bbd1-87134160976e, name=model.football_538.stg_football_rankings, idle-time=5.0067901611328125e-06s, acquire-count=0, language=sql, thread-identifier=(6303, 6170996736), compute-name=) - Released connection
+[0m17:48:45.600597 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '3abbeb47-d0c1-4af0-a190-bfb95f757c3b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x14e7b71a0>]}
+[0m17:48:45.601641 [info ] [Thread-1 (]: 2 of 3 OK created sql view model dbt.stg_football_rankings ..................... [[32mOK[0m in 1.32s]
+[0m17:48:45.602554 [debug] [Thread-1 (]: Finished running node model.football_538.stg_football_rankings
+[0m17:48:45.603672 [debug] [Thread-1 (]: Began running node model.football_538.mart_football_information
+[0m17:48:45.604425 [info ] [Thread-1 (]: 3 of 3 START sql view model dbt.mart_football_information ...................... [RUN]
+[0m17:48:45.605316 [debug] [Thread-1 (]: Databricks adapter: DatabricksDBTConnection(id=5589274688, session-id=01ef2773-3144-15b3-bbd1-87134160976e, name=model.football_538.stg_football_rankings, idle-time=0.005619049072265625s, acquire-count=0, language=sql, thread-identifier=(6303, 6170996736), compute-name=) - Checking idleness
+[0m17:48:45.606158 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.football_538.stg_football_rankings, now model.football_538.mart_football_information)
+[0m17:48:45.606734 [debug] [Thread-1 (]: Databricks adapter: DatabricksDBTConnection(id=5589274688, session-id=01ef2773-3144-15b3-bbd1-87134160976e, name=model.football_538.mart_football_information, idle-time=0.007071018218994141s, acquire-count=0, language=sql, thread-identifier=(6303, 6170996736), compute-name=) - Reusing connection previously named model.football_538.stg_football_rankings
+[0m17:48:45.607263 [debug] [Thread-1 (]: Databricks adapter: DatabricksDBTConnection(id=5589274688, session-id=01ef2773-3144-15b3-bbd1-87134160976e, name=model.football_538.mart_football_information, idle-time=0.007604122161865234s, acquire-count=1, language=sql, thread-identifier=(6303, 6170996736), compute-name=) - Acquired connection on thread (6303, 6170996736), using default compute resource for model '`ggw`.`dbt`.`mart_football_information`'
+[0m17:48:45.607748 [debug] [Thread-1 (]: Began compiling node model.football_538.mart_football_information
+[0m17:48:45.611742 [debug] [Thread-1 (]: Writing injected SQL for node "model.football_538.mart_football_information"
+[0m17:48:45.612714 [debug] [Thread-1 (]: Began executing node model.football_538.mart_football_information
+[0m17:48:45.614860 [debug] [Thread-1 (]: Writing runtime sql for node "model.football_538.mart_football_information"
+[0m17:48:45.615547 [debug] [Thread-1 (]: Databricks adapter: DatabricksDBTConnection(id=5589274688, session-id=01ef2773-3144-15b3-bbd1-87134160976e, name=model.football_538.mart_football_information, idle-time=0.015961885452270508s, acquire-count=1, language=sql, thread-identifier=(6303, 6170996736), compute-name=) - Checking idleness
+[0m17:48:45.615788 [debug] [Thread-1 (]: Databricks adapter: DatabricksDBTConnection(id=5589274688, session-id=01ef2773-3144-15b3-bbd1-87134160976e, name=model.football_538.mart_football_information, idle-time=0.016228914260864258s, acquire-count=1, language=sql, thread-identifier=(6303, 6170996736), compute-name=) - Retrieving connection
+[0m17:48:45.615973 [debug] [Thread-1 (]: Using databricks connection "model.football_538.mart_football_information"
+[0m17:48:45.616237 [debug] [Thread-1 (]: On model.football_538.mart_football_information: /* {"app": "dbt", "dbt_version": "1.8.2", "dbt_databricks_version": "1.8.1", "databricks_sql_connector_version": "3.1.2", "profile_name": "quickstart", "target_name": "dev", "node_id": "model.football_538.mart_football_information"} */
+create or replace view `ggw`.`dbt`.`mart_football_information`
+  
+  
+  
+  as
+    with
+  qryMatches as (
+    SELECT * FROM `ggw`.`dbt`.`stg_football_matches` where league = 'Barclays Premier League'
+    ),
+  qryRankings as (
+    SELECT * FROM `ggw`.`dbt`.`stg_football_rankings` where league = 'Barclays Premier League'
+  ),
+
+  qryFinal as (
+    select
+      qryMatches.season,
+      qryMatches.date,
+      qryMatches.league,
+      qryMatches.team1,
+      qryMatches.team2,
+      team_one.rank as team1_rank,
+      team_two.rank as team2_rank
+    from
+      qryMatches join
+      qryRankings as team_one on
+        (qryMatches.team1 = team_one.name) join
+      qryRankings as team_two on
+        (qryMatches.team2 = team_two.name)
+  )
+
+select * from qryFinal
+
+[0m17:48:45.616494 [debug] [Thread-1 (]: Databricks adapter: Cursor(session-id=01ef2773-3144-15b3-bbd1-87134160976e, command-id=Unknown) - Created cursor
+[0m17:48:47.347158 [debug] [Thread-1 (]: SQL status: OK in 1.7300000190734863 seconds
+[0m17:48:47.349077 [debug] [Thread-1 (]: Databricks adapter: Cursor(session-id=01ef2773-3144-15b3-bbd1-87134160976e, command-id=01ef2773-364c-17ac-bdb2-81a37e61437b) - Closing cursor
+[0m17:48:47.350698 [debug] [Thread-1 (]: Databricks adapter: DatabricksDBTConnection(id=5589274688, session-id=01ef2773-3144-15b3-bbd1-87134160976e, name=model.football_538.mart_football_information, idle-time=5.0067901611328125e-06s, acquire-count=0, language=sql, thread-identifier=(6303, 6170996736), compute-name=) - Released connection
+[0m17:48:47.351275 [debug] [Thread-1 (]: Databricks adapter: DatabricksDBTConnection(id=5589274688, session-id=01ef2773-3144-15b3-bbd1-87134160976e, name=model.football_538.mart_football_information, idle-time=2.6226043701171875e-06s, acquire-count=0, language=sql, thread-identifier=(6303, 6170996736), compute-name=) - Released connection
+[0m17:48:47.351725 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '3abbeb47-d0c1-4af0-a190-bfb95f757c3b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x14f81ce30>]}
+[0m17:48:47.352374 [info ] [Thread-1 (]: 3 of 3 OK created sql view model dbt.mart_football_information ................. [[32mOK[0m in 1.75s]
+[0m17:48:47.352998 [debug] [Thread-1 (]: Finished running node model.football_538.mart_football_information
+[0m17:48:47.354320 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(id=5609804224, session-id=None, name=master, idle-time=7.938297986984253s, acquire-count=0, language=None, thread-identifier=(6303, 8441035456), compute-name=) - Checking idleness
+[0m17:48:47.354785 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(id=5609804224, session-id=None, name=master, idle-time=7.938794851303101s, acquire-count=0, language=None, thread-identifier=(6303, 8441035456), compute-name=) - Reusing connection previously named master
+[0m17:48:47.355114 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(id=5609804224, session-id=None, name=master, idle-time=7.939137935638428s, acquire-count=1, language=None, thread-identifier=(6303, 8441035456), compute-name=) - Acquired connection on thread (6303, 8441035456), using default compute resource
+[0m17:48:47.355429 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(id=5609804224, session-id=None, name=master, idle-time=7.939462900161743s, acquire-count=1, language=None, thread-identifier=(6303, 8441035456), compute-name=) - Checking idleness
+[0m17:48:47.355718 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(id=5609804224, session-id=None, name=master, idle-time=7.939749717712402s, acquire-count=1, language=None, thread-identifier=(6303, 8441035456), compute-name=) - Retrieving connection
+[0m17:48:47.355975 [debug] [MainThread]: On master: ROLLBACK
+[0m17:48:47.356226 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m17:48:47.783775 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(id=5609804224, session-id=01ef2773-3778-1ab1-b1c2-5eb716c5e91d, name=master, idle-time=1.2874603271484375e-05s, acquire-count=1, language=None, thread-identifier=(6303, 8441035456), compute-name=) - Connection created
+[0m17:48:47.785011 [debug] [MainThread]: Databricks adapter: NotImplemented: rollback
+[0m17:48:47.786059 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(id=5609804224, session-id=01ef2773-3778-1ab1-b1c2-5eb716c5e91d, name=master, idle-time=0.002502918243408203s, acquire-count=1, language=None, thread-identifier=(6303, 8441035456), compute-name=) - Checking idleness
+[0m17:48:47.786885 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(id=5609804224, session-id=01ef2773-3778-1ab1-b1c2-5eb716c5e91d, name=master, idle-time=0.0033648014068603516s, acquire-count=1, language=None, thread-identifier=(6303, 8441035456), compute-name=) - Retrieving connection
+[0m17:48:47.787541 [debug] [MainThread]: Spark adapter: NotImplemented: add_begin_query
+[0m17:48:47.788101 [debug] [MainThread]: Spark adapter: NotImplemented: commit
+[0m17:48:47.788745 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(id=5609804224, session-id=01ef2773-3778-1ab1-b1c2-5eb716c5e91d, name=master, idle-time=5.0067901611328125e-06s, acquire-count=0, language=None, thread-identifier=(6303, 8441035456), compute-name=) - Released connection
+[0m17:48:47.789609 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m17:48:47.790155 [debug] [MainThread]: On master: ROLLBACK
+[0m17:48:47.790515 [debug] [MainThread]: Databricks adapter: NotImplemented: rollback
+[0m17:48:47.790864 [debug] [MainThread]: On master: Close
+[0m17:48:47.791272 [debug] [MainThread]: Databricks adapter: Connection(session-id=01ef2773-3778-1ab1-b1c2-5eb716c5e91d) - Closing connection
+[0m17:48:47.932924 [debug] [MainThread]: Connection 'model.football_538.mart_football_information' was properly closed.
+[0m17:48:47.933275 [debug] [MainThread]: On model.football_538.mart_football_information: ROLLBACK
+[0m17:48:47.933481 [debug] [MainThread]: Databricks adapter: NotImplemented: rollback
+[0m17:48:47.933655 [debug] [MainThread]: On model.football_538.mart_football_information: Close
+[0m17:48:47.933844 [debug] [MainThread]: Databricks adapter: Connection(session-id=01ef2773-3144-15b3-bbd1-87134160976e) - Closing connection
+[0m17:48:48.080075 [info ] [MainThread]: 
+[0m17:48:48.080456 [info ] [MainThread]: Finished running 3 view models in 0 hours 0 minutes and 11.30 seconds (11.30s).
+[0m17:48:48.081025 [debug] [MainThread]: Command end result
+[0m17:48:48.100090 [info ] [MainThread]: 
+[0m17:48:48.100351 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m17:48:48.100518 [info ] [MainThread]: 
+[0m17:48:48.100679 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=0 SKIP=0 TOTAL=3
+[0m17:48:48.102541 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 12.510801, "process_user_time": 1.825177, "process_kernel_time": 2.782473, "process_mem_max_rss": "225525760", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m17:48:48.102841 [debug] [MainThread]: Command `dbt run` succeeded at 17:48:48.102794 after 12.51 seconds
+[0m17:48:48.103041 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10682d760>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106755e80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106de8bf0>]}
+[0m17:48:48.103212 [debug] [MainThread]: Flushing usage events
