@@ -1,0 +1,9 @@
+football_538:
+    target: dev
+    outputs:
+        dev:
+          type: databricks
+          schema: dbt_jack_sparrow
+          host: "{{ env_var('databricks_host') }}"
+          http_path: /sql/your/http/path
+          token: "{{ env_var('databricks_token') }}"
