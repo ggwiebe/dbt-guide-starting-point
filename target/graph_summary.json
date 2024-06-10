@@ -1,1 +1,0 @@
-{"_invocation_id": "3abbeb47-d0c1-4af0-a190-bfb95f757c3b", "linked": {"0": {"name": "model.football_538.mart_football_information", "type": "model"}, "1": {"name": "model.football_538.stg_football_matches", "type": "model", "succ": [0]}, "2": {"name": "model.football_538.stg_football_rankings", "type": "model", "succ": [0]}}}
