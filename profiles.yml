@@ -31,7 +31,7 @@ quickstart_oauth:
       schema: dbt # Required
       # host: YOURORG.databrickshost.com # Required
       # token: dapiXXXXXXXXXXXXXXXXXXXXXXX # Required Personal Access Token (PAT) if using token-based authentication
-      host: "{{ env_var('databricks_host') }}"
+      host: "{{ env_var('DATABRICKS_HOST') }}"
       http_path: /sql/1.0/warehouses/824f62d19acf3cb9 # Required
       auth_type: oauth # Required if using OAuth-based authentication
       client_id: 53864423-4624-44b8-8bf7-36923eb6f698 # The ID of your OAuth application. Required if using OAuth-based authentication
